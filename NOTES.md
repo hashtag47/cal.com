@@ -15,5 +15,8 @@
  *deployes/ --> Docker, Helm, or deployment configs “Blueprints for production”
 
  *Root configs (turbo.json, packages.json...) --> Define how the monorepo builds and runs “Traffic rules”
-
- 
+  |
+   --> packages.json defines workspace-wide dev tooling (TypeScript version, lint, test scripts, etc.)
+  |
+   --> turbo.json defines the build pipeline for the monorepo. Turborepo decides what to build first, what depends on what, and how to           cache results.
+  
